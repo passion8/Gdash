@@ -1,0 +1,11 @@
+<!-- Lexity_Gdash.xml -->
+<config>
+	<modules>
+		<Lexity_Gdash>
+			<active>true</active>
+			<codePool>local</codePool><!-- this could be also 'community' -->
+			
+		</Lexity_Gdash>
+	</modules>
+</config>
+

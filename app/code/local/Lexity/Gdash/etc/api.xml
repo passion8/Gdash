@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+ 
+<config>
+    <api>
+	<resources>
+            <gdash_order translate="title" module="gdash">
+                <model>gdash/order_api</model>
+                <title>Order API</title>
+             <acl>gdash/order</acl> 
+                <methods>
+                    <limiteditems translate="title" module="gdash">
+                        <title>Retrieve list of orders by filters</title>
+                        <method>limiteditems</method>
+                    </limiteditems>
+                    <getMisc translate="title" module="gdash">
+                        <title>get the Miscellaneous Scripts</title>
+                        <method>getMisc</method>
+                    </getMisc>
+                    <setMisc translate="title" module="gdash">
+                        <title>Set the Miscellaneous Scripts</title>
+                        <method>setMisc</method>
+                    </setMisc>
+                    
+                </methods>
+               
+            </gdash_order>
+	</resources>
+	<resources_alias>
+            <pagorder>gdash_order</pagorder>
+	</resources_alias>
+	
+        <acl>
+            <resources>
+                        <gdash_order translate="title" module="gdash">
+                            <title>orders</title>
+                            
+                                    <order translate="title" module="gdash">
+                                            <title>View All</title>
+                                    </order>
+                        </gdash_order>
+
+                        
+            </resources>
+	</acl>
+    </api>
+</config>

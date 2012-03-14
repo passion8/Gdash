@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>    
+    <modules>
+        <Lexity_Gdash>
+            <version>0.1.0</version>
+        </Lexity_Gdash>
+    </modules>
+    <global>
+        <helpers>
+                <gdash>
+                        <class>Lexity_Gdash_Helper</class>
+                </gdash>
+        </helpers>
+        <models>
+            <gdash>
+                <class>Lexity_Gdash_Model</class>
+               <!-- <resourceModel>sales_resource</resourceModel> -->
+            </gdash>
+        </models>
+        <blocks>
+	        <gdash>
+	            <class>Lexity_Gdash_Block</class>
+	        </gdash> 
+	</blocks>
+        
+        
+    </global> 
+	
+     <admin>
+        <routers>
+            <gdash>
+                <use>admin</use>
+                <args>
+                    <module>Lexity_Gdash</module>
+                    <frontName>gdash</frontName>
+                </args>
+            </gdash>
+        </routers>  
+    </admin>
+	
+    <adminhtml>
+        
+        <menu>
+            <Lexity translate="title" module="gdash">
+                <title>Lexity</title>
+		<sort_order>16</sort_order> 
+                        <action>gdash/index/index</action>
+            </Lexity>
+        </menu>
+          
+        
+    </adminhtml>
+	
+</config>
